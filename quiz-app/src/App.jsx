@@ -1,8 +1,11 @@
 import Quiz from "./Quiz";
-import {jsQuiz} from "./constants.js";
+import {jsQuizz} from "./constants";
+
+
+
 
 function App() {
 
-  return <Quiz questions={jsQuiz} />;
+  return <Quiz questions={jsQuizz} />;
 }
 export default App
