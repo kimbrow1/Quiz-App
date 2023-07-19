@@ -1,8 +1,8 @@
 import { useState } from "react";
 
 const Quiz = ({ questions  }) => {
-    const [currentQuestion, setQuestion] = useState(0);
-    const {question, choices,correctAnswer} = questions [currentQuestion];
+    const [currentQuestion, setCurrentQuestion] = useState(0);
+    const { question, choices, correctAnswer } = questions [currentQuestion];
 
 
     return (
@@ -11,8 +11,6 @@ const Quiz = ({ questions  }) => {
             <span className="active-question-no">{currentQuestion + 1}</span>
             <span className="total-question">/{questions.length}</span>
             <h2>{question}</h2>
-            
-
         </>
         </div>
 
